@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:id="@+id/ltsettings">
+
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="#ffffff"
+    android:padding="10dp">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Switch
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch App OnShake"
+        android:id="@+id/shakeswitch"
+        android:layout_gravity="left"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Background"
+        android:id="@+id/textView7"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rgBackground"
+        android:focusable="false"
+        android:clickable="false"
+        android:contextClickable="false">
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Beach"
+            android:id="@+id/rbBeach"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:checked="false" />
+
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Flowers"
+            android:id="@+id/rbFlowers"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunset"
+            android:id="@+id/rbSunset"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Stones"
+            android:id="@+id/rbStones"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="WaterDrops"
+            android:id="@+id/rbWaterdrops"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:onClick="setBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Default"
+            android:id="@+id/rbdefault"
+            android:padding="10dp"
+            android:checked="false" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Tile Color"
+            android:id="@+id/textView8"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rgTileeColor" >
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tansparent"
+                android:id="@+id/rbTransparent"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:id="@+id/rbRed"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:id="@+id/rbGreen"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lime Yellow"
+                android:id="@+id/rbYellow"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Grey"
+                android:id="@+id/rbGrey"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pink"
+                android:id="@+id/rbPink"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:onClick="setTileColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:id="@+id/rbBLue"
+                android:padding="10dp"
+                android:checked="false" />
+        </RadioGroup>
+
+
+</LinearLayout>
+ </ScrollView>
+</LinearLayout>

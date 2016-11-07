@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="android.starlabs.com.androidapps.AddProductActivity"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product ID"
+            android:id="@+id/textView19"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUpProductId"
+            android:background="@drawable/edittext_rounded_style"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:id="@+id/textView12"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUpProductName"
+            android:background="@drawable/edittext_rounded_style"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Units"
+            android:id="@+id/textView15"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUpNumberofUnits"
+                android:inputType="number"
+                android:background="@drawable/edittext_rounded_style"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_weight="1.60" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/UpunitsSpinner"
+                android:layout_weight="0.40"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Price"
+            android:id="@+id/textView16"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUpUnitPrice"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_rounded_style"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vendor Name"
+            android:id="@+id/textView17"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUpVendorName"
+            android:background="@drawable/edittext_rounded_style"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Details"
+            android:id="@+id/textView18"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etUpProductDetail"
+            android:background="@drawable/edittext_rounded_style"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:scrollIndicators="right" />
+
+        <Button
+            android:onClick="doUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/btnSaveProduct"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/photoEditorLayout">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/rlayout">
+
+
+            <ImageButton
+                android:onClick="getImage"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibtnCameraLauncher"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:src="@mipmap/camera_icon"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:onClick="saveImage"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibtnSaveImage"
+                android:background="@null"
+                android:src="@drawable/saveicon"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:onClick="getImage"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ibtnGallaryLauncher"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:src="@mipmap/gallary_icon"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:id="@+id/ivImage"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/defaultimage"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/rlayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/horizontalScrollView"
+        android:scrollbarSize="2dip"
+        android:scrollbarFadeDuration="2000"
+
+        android:scrollbarStyle="insideOverlay"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+
+
+
+            <ImageButton
+                android:onClick="applyFilter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Original"
+                android:id="@+id/ibtnOriginal"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                />
+
+            <ImageButton
+                android:onClick="applyFilter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="B/W"
+                android:id="@+id/ibtnBW" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Sepia"
+                android:id="@+id/ibtnSepia" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Gray Scale"
+                android:id="@+id/ibtnGrayScale" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Saturation"
+                android:id="@+id/ibtnSat" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Custom 0"
+                android:id="@+id/ibtnCustom" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Custom 1"
+                android:id="@+id/ibtnCustom1" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Custom 2"
+                android:id="@+id/ibtnCustom2" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Custom 3"
+                android:id="@+id/ibtnCustom3" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

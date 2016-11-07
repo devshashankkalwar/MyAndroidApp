@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Android Apps</string>
+    <string name="calculator_app_name">Simple Calculator</string>
+    <string name="navigator_app_name">My Android Apps</string>
+    <string name="greet_app_name">Greet User</string>
+    <string name="screen_calibration_app_name">Screen Calibration</string>
+    <string name="benchmark_app_name">Sorting Benchmark</string>
+    <string name="login_activity_name">Android Project</string>
+    <string name="user_registration_activity_name">New User Registration </string>
+    <string name="settings_activity_name">Settings</string>
+    <string name="about_vendorManagement_app">Vendor Management provides the facilty to maintain product and vendor
+        database with feature to Add, Update or Delete product and its details.</string>
+    <string-array name="units">
+        <item>kg</item>
+        <item>gms</item>
+        <item>quintals</item>
+        <item>units</item>
+    </string-array>
+    <string name="title_activity_example">ExampleActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alert">AlertActivity</string>
+</resources>

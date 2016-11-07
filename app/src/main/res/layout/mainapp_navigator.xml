@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigatorLayout"
+   >
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linearlayout1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageButton
+            android:onClick="doNavigation"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/vendordb"
+            android:scaleType="centerCrop"
+            android:id="@+id/btnVendordb"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Linearlayout2"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:onClick="doNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Greet User"
+            android:id="@+id/btnGreetUser"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:onClick="doNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="About Actors"
+            android:id="@+id/btnAboutActors"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/Linearlayout3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/Linearlayout6">
+
+        <Button
+            android:onClick="doNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Sorting BenchMark App"
+            android:id="@+id/btnSortBenchmark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/Linearlayout7">
+            <ImageButton
+                android:onClick="doNavigation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnGallery"
+                android:layout_weight="1"
+                android:src="@mipmap/gallary_icon"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:onClick="doNavigation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnWhatsapp"
+                android:layout_weight="1"
+                android:src="@mipmap/whatsapp_icon"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:onClick="doNavigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCalculator"
+            android:src="@drawable/calculator_logo"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/Linearlayout4"
+        android:weightSum="2">
+
+        <ImageButton
+            android:onClick="doNavigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPhotoEdit"
+            android:src="@drawable/photoeditor_icon"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:onClick="doNavigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnAlertApp"
+            android:src="@drawable/alert_icon"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:weightSum="4"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/Linearlayout5">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>
